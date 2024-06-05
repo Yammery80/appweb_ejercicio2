@@ -159,3 +159,16 @@ nav .profile-link a::after {
 margin-bottom: 35px;
 }
 
+.blog-button{
+    border: 1px solid var(--color-primary)
+    padding 10px 15px;
+    font-size: 12px;
+    background-color: var(--color-light);
+    color: var(--color-black);
+}
+
+.blog-button:hover {
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
