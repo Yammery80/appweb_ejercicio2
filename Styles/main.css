@@ -17,6 +17,11 @@ body{
     left: 0;
     right: 0;
     bottom:0;
+    font-family: "Sevillana", cursive;
+    letter-spacing: 2px;
+}
+p{
+    font-family: 'Roboto';
 }
 a{
     text-decoration: none;
@@ -24,7 +29,7 @@ a{
 }
 header{
     width: 100%;
-    height: 140px;
+    height: 139px;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -35,8 +40,6 @@ header .header-icons-container{
     background: var(--color-primary);
 }
 header .header-icons-container .icons{
-    width: 300px;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,7 +108,6 @@ nav .profile-link a::after {
     letter-spacing: 10px;
     text-align: end;
     color: var(--color-white);
-    font-family: "Sevillana", cursive;
     font-weight: 1000;
     font-style: normal;
 }
@@ -177,15 +179,15 @@ margin-bottom: 35px;
 
 .blog-post-container .post-container{
     display: inline-block;
-    padding-left: 10px;
+    padding: 3%;
+    padding-left: 10%;
     max-width: 30%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .blog-post-container .post-container img{
     width: 50%;
 }
 .blog-post-container .post-container p{
-    font-family: "Sevillana", cursive;
     margin-bottom: 35px;
 }
 .blog-post-container .post-container p:nth-child(2){
@@ -201,7 +203,124 @@ footer{
     text-align: center;
 }
 footer p{
-    font-family: "Sevillana", cursive;
     color: var(--color-white);
     margin-top: 30px;
+}
+
+/*ABOUT ME CSS*/
+
+.aboutme-main{
+    display: grid;
+}
+
+.aboutme-news-container{
+    display: grid;
+    background-color: var(--color-light);
+    padding: 0 50px 40px;
+}
+.aboutme-main-new{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+.aboutme-news-img-container{
+    grid-column: 1;
+}
+
+.aboutme-news-img-container img{
+    width: 90%;
+    padding:10% 20% 0% 20%; //*1.arriba 2.izquierda 3.abajo 4.derecha*/
+
+}
+
+.aboutme-new-info-container{
+    grid-column: 2;
+}
+.aboutme-new-info-container p{
+margin-bottom: 35px;
+}
+
+.aboutme-button{
+    border: 1px solid #6b5707a1;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #dfca77;
+}
+
+.aboutme-button:hover {
+    border: 1px solid #6b5707a1;
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+.aboutme-post-container h3{
+    font-size: 30px;
+    font-family: "Sevillana", cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 30px 20px;
+}
+.aboutme-post-container .aboutme-article-container{
+    display: inline-block;
+    padding: 3%;
+    padding-left: 10%;
+    max-width: 20%;
+    margin-bottom: 30px;
+}
+
+.aboutme-post-container .aboutme-article-container p{
+    margin-bottom: 20px;
+    color: var(--color-black);
+}
+.aboutme-post-container .aboutme-article-container p:nth-child(1){
+    font-weight: bold;
+    color:var(--color-light);
+    font-size: larger;
+}
+
+.aboutme-footer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    border-top: 35px solid var(--color-light);
+    text-align: center;
+}
+.aboutme-section-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.aboutme-section-footer .contact{
+    padding-top: 20px;
+    padding-bottom: 0%;
+}
+
+.aboutme-footer p{
+    color: var(--color-white);
+    margin: 20px;
+    margin-bottom: 0px;
+}
+.aboutme-footer .madeby{
+    padding-bottom: 15px;
+    padding-top: 0px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.aboutme-footer .aboutme-section-footer .contact img{
+    height: 70%;
+    width: auto;
+    margin-top:15px;
+    margin-bottom: 0%;
+}
+
+/*Contacto CSS*/
+
+form{
+    padding: 10px;
+    background-color: var(--color-light);
+    color: var(--color-black);
+}
+label{
+    font-weight: bold ;
+    font-size: 20px;
 }
